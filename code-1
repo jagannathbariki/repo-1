@@ -7,3 +7,7 @@ unzip lab-app.zip -d /var/www/html/
 # Turn on web server
 chkconfig httpd on
 service httpd start
+systemctl enable httpd
+mkdir /var/www/html/maruti/
+echo "<h1>This is maruti App</h1>" > /var/www/html/maruti/index.html
+systemctl start httpd
