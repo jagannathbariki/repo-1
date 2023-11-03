@@ -1,0 +1,8 @@
+#!/bin/bash
+yum update -y
+# Install Apache Web Server 
+yum install httpd -y
+# Turn on web server
+service httpd start
+chkconfig httpd on
+
